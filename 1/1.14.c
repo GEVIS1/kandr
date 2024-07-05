@@ -30,19 +30,12 @@ main() {
         cv[i] = 0;
     }
   
-    int charsinput = 0;
     while ((c = getchar()) != EOF) {
         if (ASCII_START <= c && c <= ASCII_END) {
             int ci = c - ASCII_START;
             cv[ci] = c;
             cc[ci]++;
-            charsinput++;
         }
-    }
-
-    if (charsinput < MAX_CHARACTER_COUNT) {
-        fprintf(stderr, "Error: Not enough characters input. Exiting.\n");
-        return -1;
     }
    
     int sorted = 0;
