@@ -54,12 +54,3 @@ void copy(char to[][MAXLINE], char from[], int index)
         while ((to[index][i] = from[i]) != '\0')
             ++i;
 }
-
-// /* initarray: initialize the array for storing the lines */
-// void initarray(char arr[][], int len)
-// {
-//     for (i=0; i<len-1; ++i)
-//     {
-//         arr[i][j] =
-//     }
-// }
